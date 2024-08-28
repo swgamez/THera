@@ -5,16 +5,6 @@
 #
 # Release Power Button to shutdown your GPi case
 
-version=$(grep -o '^[^ ]*' $HOME/data.version)
-
-# Minimum version of BATOCERA is 5.24 because here batocera-es-swissknife is integrated
-# so all versions less then 5.24 will be dropped from further install
-if [[ ${version//[^[:digit:]]/} -lt 24 ]]; then
-    echo "Error!"
-    echo "Your current version of Batocera is '$version'"
-    echo "You need at least 24 ...."
-    exit
-fi 
 
 echo "Welcome to the Safe Shutdown installer..."
 echo "Batocera '$version' detected..."
