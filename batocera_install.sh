@@ -9,10 +9,10 @@ version=$(grep -o '^[^ ]*' $HOME/data.version)
 
 # Minimum version of BATOCERA is 5.24 because here batocera-es-swissknife is integrated
 # so all versions less then 5.24 will be dropped from further install
-if [[ ${version//[^[:digit:]]/} -lt 524 ]]; then
+if [[ ${version//[^[:digit:]]/} -lt 24 ]]; then
     echo "Error!"
     echo "Your current version of Batocera is '$version'"
-    echo "You need at least 5.24 ...."
+    echo "You need at least 24 ...."
     exit
 fi 
 
