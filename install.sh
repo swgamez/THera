@@ -22,7 +22,7 @@ sleep 2s
 #-----------------------------------------------------------
 
 #Step 5) Download Python script-----------------------------
-cd /opt/
+cd /userdata/
 mkdir RetroFlag
 cd RetroFlag
 script=SafeShutdown.py
@@ -34,15 +34,15 @@ chmod +x multi_switch.sh
 #-----------------------------------------------------------
 sleep 2s
 #Step 6) Enable Python script to run on start up------------
-cd /etc/
+cd /userdata/RetroFlag/
 RC=rc.local
 
 if grep -q "sudo python3 \/userdata/RetroFlag/SafeShutdown.py \&" "$RC";
 	then
-		echo "File /etc/rc.local already configured. Doing nothing."
+		echo "File/userdata/RetroFlag/rc.local already configured. Doing nothing."
 	else
 		sed -i -e "s/^exit 0/sudo python3 \/userdata/RetroFlag/SafeShutdown.py \&\n&/g" "$RC"
-		echo "File /etc/rc.local configured."
+		echo "File /userdata/RetroFlag/rc.local configured."
 fi
 #-----------------------------------------------------------
 
