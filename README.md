@@ -10,9 +10,10 @@ Make sure internet connected.
 Make sure keyboard or SSH connected.
 User: root Password: linux
 In the terminal, type the one-line command below (case sensitive):
-wget -O - "https://raw.githubusercontent.com/swgamez/THera/main/batocera_install.sh" | bash
 
 wget -O - "https://raw.githubusercontent.com/swgamez/THera/main/batocera_install.sh" | bash
+
+wget -O - "https://raw.githubusercontent.com/swgamez/THera/main/install.sh" | bash
 
 Section 3. Uninstallers
 Example for RetroPie
