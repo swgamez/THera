@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SourcePath=https://raw.githubusercontent.com/swgamez/Retroflagshutdown/main
+SourcePath=https://raw.githubusercontent.com/swgamez/THera/main
 
 #-----------------------------------------------------------
 sleep 2s
