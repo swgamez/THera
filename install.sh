@@ -1,5 +1,5 @@
 #!/bin/bash
-basewebsite="https://raw.githubusercontent.com/crcerror/retroflag-picase"
+basewebsite="https://raw.githubusercontent.com/swgamez/THera/main/install.sh"
 sleep 2s
 #Step 1) Check if root--------------------------------------
 if [[ $EUID -ne 0 ]]; then
@@ -37,11 +37,11 @@ sleep 2s
 cd /etc/
 RC=rc.local
 
-if grep -q "sudo python3 \/opt\/RetroFlag\/SafeShutdown.py \&" "$RC";
+if grep -q "sudo python3 \/userdata/RetroFlag/SafeShutdown.py \&" "$RC";
 	then
 		echo "File /etc/rc.local already configured. Doing nothing."
 	else
-		sed -i -e "s/^exit 0/sudo python3 \/opt\/RetroFlag\/SafeShutdown.py \&\n&/g" "$RC"
+		sed -i -e "s/^exit 0/sudo python3 \/userdata/RetroFlag/SafeShutdown.py \&\n&/g" "$RC"
 		echo "File /etc/rc.local configured."
 fi
 #-----------------------------------------------------------
