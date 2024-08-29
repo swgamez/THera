@@ -28,7 +28,7 @@ cd RetroFlag
 script=SafeShutdown.py
 wget --no-check-certificate "$basewebsite/main/SafeShutdown.py"
 chmod +x SafeShutdown.py
-wget --no-check-certificate "$basewebsitemain/multi_switch.sh"
+wget --no-check-certificate "$basewebsit/emain/multi_switch.sh"
 chmod +x multi_switch.sh
 
 #-----------------------------------------------------------
