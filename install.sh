@@ -13,7 +13,8 @@ mount -o remount, rw /
 mkdir /userdata/RetroFlag
 sleep 2s
 script=/userdata/RetroFlag/SafeShutdown.py
-wget -O  $script "$SourcePath/batocera_SafeShutdown_gpi2.py"
+wget -O  $script "$SourcePath/SafeShutdown.py"
+wget -O  $script "$SourcePath/multi_switch.sh"
 #-----------------------------------------------------------
 
 sleep 2s
